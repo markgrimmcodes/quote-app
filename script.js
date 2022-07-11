@@ -10,7 +10,7 @@ fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
     console.log(dataObject.data[0].quoteText);
     console.log(dataObject.data[0].quoteAuthor);
     quote.innerText = dataObject.data[0].quoteText;
-    author.innerText = dataObject.data[0].quoteAuthor;
+    author.innerText = "-" + dataObject.data[0].quoteAuthor;
   });
 
 btn.addEventListener("click", () => {
@@ -22,6 +22,6 @@ btn.addEventListener("click", () => {
       console.log(dataObject.data[0].quoteText);
       console.log(dataObject.data[0].quoteAuthor);
       quote.innerText = dataObject.data[0].quoteText;
-      author.innerText = dataObject.data[0].quoteAuthor;
+      author.innerText = "-" + dataObject.data[0].quoteAuthor;
     });
 });
